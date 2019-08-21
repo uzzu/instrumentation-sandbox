@@ -24,7 +24,7 @@ class MainActivityTest {
     val activityFactoryRule = SpySingleActivityFactory.Rule<MainActivity>()
 
     @get:Rule
-    val activityRule = ActivityTestRule(activityFactoryRule.factory, true, true)
+    val activityRule = ActivityTestRule(activityFactoryRule.factory, true, false)
 
     @Test
     fun replacePresenter() {
